@@ -3,6 +3,9 @@
 This is a full-stack web application for an online furniture store.  
 Users can browse furniture items, add them to a cart, and place orders.
 
+## Preview
+![image](https://github.com/user-attachments/assets/e060c00b-c812-4d1c-b9f9-640e8028de8f)
+
 ## Tech Stack
 
 ### Client (Frontend):
@@ -36,35 +39,22 @@ cd furniture-store
 cd client
 npm install
 ```
-#### Server:
+### 3. Start the frontend
 
-```bash
-cd ../server
-npm install
-```
-### 3. Set up environment variables
-Create a .env file inside the server directory and add:
+Since the backend is already deployed to Render, you don't need to run it locally.
+The client is pre-configured to use the deployed backend.
 
+Start the React app:
 ```env
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-```
-Make sure to replace your_mongodb_connection_string with your actual MongoDB Atlas URI.
-
-### 4. Start the app
-Start the backend:
-
-```bash
-cd server
-node server
-```
-Start the frontend:
-
-```bash
-cd ../client
 npm run dev
 ```
-Open your browser at: http://localhost:5173
+Then open your browser at: http://localhost:5173
+
+## 
+If you still want to run the backend locally (for development purposes), navigate to the server folder, install dependencies, create a .env file with your MONGO_URI, and run:
+```bash
+node server
+```
 
 ## Project Structure
 ```bash
